@@ -145,6 +145,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Volunteer Form Submission Handler
+  const volunteerForm = document.getElementById("volunteer-form");
+  const volunteerSuccessAlert = document.getElementById("volunteer-success-alert");
+  if (volunteerForm) {
+    volunteerForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (volunteerSuccessAlert) {
+        volunteerSuccessAlert.classList.remove("d-none");
+        volunteerForm.reset();
+        volunteerSuccessAlert.scrollIntoView({ behavior: "smooth", block: "center" });
+        setTimeout(() => {
+          volunteerSuccessAlert.classList.add("d-none");
+        }, 7000);
+      } else {
+        alert(currentLang === "hi" ? "धन्यवाद! स्वयंसेवक पंजीकरण सफल हुआ।" : "Thank you for registering as a volunteer!");
+        volunteerForm.reset();
+      }
+    });
+  }
+
   // Dark Mode Theme Controller
   const darkModeToggle = document.getElementById("dark-mode-toggle");
   if (darkModeToggle) {

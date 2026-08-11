@@ -4,16 +4,53 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>संपर्क करें | Contact Us - Sarvahit Seva Trust</title>
+  <meta name="description" content="सर्वहित सेवा ट्रस्ट से संपर्क करें। फ़ोन: +91 89530 78333, ईमेल: sarvhitsevatrust@gmail.com, कार्यालय: लहुवा खुर्द, पहलना, लालगंज, आजमगढ़, उत्तर प्रदेश - 276202."/>
+  <meta name="keywords" content="Sarvahit Seva Trust Contact, NGO Azamgarh Address, Sarvahit Phone Number, Sarvahit Email, Azamgarh NGO Office"/>
+  <link rel="canonical" href="https://sarvahit.org/contact.html"/>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="संपर्क करें | Contact Us - Sarvahit Seva Trust"/>
+  <meta property="og:description" content="सेवा • सहयोग • मानवता • जनकल्याण | Contact Sarvahit Seva Trust Azamgarh."/>
+  <meta property="og:type" content="website"/>
+
+  <!-- Google Fonts & Bootstrap Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- Bootstrap 5 CSS Framework -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Custom Stylesheets -->
   <link rel="stylesheet" href="assets/css/main.css"/>
   <link rel="stylesheet" href="assets/css/components.css"/>
+  <link rel="stylesheet" href="assets/css/animations.css"/>
+
+  <!-- Organization Contact Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Sarvahit Seva Trust",
+    "alternateName": "सर्वहित सेवा ट्रस्ट",
+    "identifier": "UP/2026/1144009",
+    "telephone": "+91 89530 78333",
+    "email": "sarvhitsevatrust@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gram Lahua Khurd, Post Palhna, Block Palhna, Tehsil Lalganj",
+      "addressLocality": "Azamgarh",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "276202",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
 </head>
 <body>
-  <!-- Slim Top Info Bar -->
+
+  <!-- SLIM TOP INFORMATION BAR -->
   <div class="top-info-bar py-1 border-bottom border-dark border-opacity-25">
     <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
       <div class="d-flex align-items-center gap-2">
@@ -26,7 +63,8 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-lg sticky-navbar fixed-top bg-body-tertiary bg-opacity-75 backdrop-blur border-bottom shadow-sm">
+  <!-- STICKY NAVBAR HEADER -->
+  <nav class="navbar navbar-expand-lg sticky-navbar fixed-top bg-body-tertiary bg-opacity-90 backdrop-blur border-bottom shadow-sm">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
         <img src="assets/images/logo.png" alt="Sarvahit Seva Trust Logo" class="brand-logo-img"/>
@@ -35,7 +73,12 @@
           <span class="text-secondary font-motto" style="font-size: 11px;" data-hi="सेवा • सहयोग • मानवता • जनकल्याण" data-en="Service • Cooperation • Humanity">सेवा • सहयोग • मानवता • जनकल्याण</span>
         </div>
       </a>
-      <div class="collapse navbar-collapse show" id="nav">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPortal" aria-controls="navbarPortal" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarPortal">
         <ul class="navbar-nav ms-auto gap-lg-2 fw-semibold">
           <li class="nav-item"><a class="nav-link" href="index.html" data-hi="मुख्य पृष्ठ" data-en="Home">मुख्य पृष्ठ</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html" data-hi="हमारे बारे में" data-en="About Us">हमारे बारे में</a></li>
@@ -46,109 +89,362 @@
           <li class="nav-item"><a class="nav-link active text-success" href="contact.html" data-hi="संपर्क" data-en="Contact">संपर्क</a></li>
         </ul>
 
-        <div class="d-flex align-items-center gap-2 ms-lg-3">
-          <button id="lang-toggle" class="lang-toggle-btn d-flex align-items-center gap-1">
+        <div class="d-flex align-items-center gap-2 ms-lg-3 mt-3 mt-lg-0">
+          <button id="lang-toggle" class="lang-toggle-btn d-flex align-items-center gap-1" title="Switch Language">
             <i class="bi bi-translate"></i>
             <span id="lang-btn-text">English</span>
           </button>
-          <a href="index.html#donate" class="btn btn-trust-secondary" data-hi="सहयोग करें" data-en="Donate Now">सहयोग करें</a>
+
+          <button id="dark-mode-toggle" class="btn btn-sm btn-outline-secondary rounded-circle p-2" aria-label="Toggle Dark Mode">
+            <i class="bi bi-moon-fill"></i>
+          </button>
+
+          <a href="index.html#donate" class="btn btn-trust-secondary d-flex align-items-center gap-1 px-3 py-2">
+            <span data-hi="सहयोग करें" data-en="Donate Now">सहयोग करें</span>
+            <i class="bi bi-heart-fill"></i>
+          </a>
         </div>
       </div>
     </div>
   </nav>
 
-  <main class="py-5 mt-5">
-    <div class="container py-5">
-      <div class="text-center max-w-2xl mx-auto mb-5">
-        <span class="badge bg-success-subtle text-success px-3 py-1.5 rounded-pill fw-bold text-uppercase mb-2" data-hi="पंजीकरण संख्या: UP/2026/1144009" data-en="Reg No.: UP/2026/1144009">पंजीकरण संख्या: UP/2026/1144009</span>
-        <h1 class="display-4 fw-bold text-success mb-2" data-hi="संपर्क करें" data-en="Contact Us">संपर्क करें</h1>
-        <p class="lead text-body-secondary" data-hi="सर्वहित सेवा ट्रस्ट (SARVAHIT SEVA TRUST)" data-en="SARVAHIT SEVA TRUST">सर्वहित सेवा ट्रस्ट (SARVAHIT SEVA TRUST)</p>
+  <!-- HERO SUB-HEADER SECTION -->
+  <header class="py-5 mt-5 bg-body-tertiary position-relative overflow-hidden border-bottom">
+    <div class="container py-4">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7 text-center text-lg-start">
+          <span class="badge bg-success-subtle text-success px-3 py-1.5 rounded-pill fw-bold text-uppercase mb-2" data-hi="पंजीकरण संख्या: UP/2026/1144009" data-en="Reg No.: UP/2026/1144009">पंजीकरण संख्या: UP/2026/1144009</span>
+          <h1 class="display-4 fw-bold text-success mb-2" data-hi="हमसे संपर्क करें" data-en="Get in Touch With Us">हमसे संपर्क करें</h1>
+          <p class="lead text-body-secondary max-w-2xl" data-hi="सर्वहित सेवा ट्रस्ट (SARVAHIT SEVA TRUST) आपके प्रश्नों, सुझावों व सहयोग के लिए सदैव तत्पर है।" data-en="Sarvahit Seva Trust is always available for your inquiries, suggestions, and collaborative support.">
+            सर्वहित सेवा ट्रस्ट (SARVAHIT SEVA TRUST) आपके प्रश्नों, सुझावों व सहयोग के लिए सदैव तत्पर है।
+          </p>
+        </div>
+        <div class="col-lg-5 text-center fade-up">
+          <img src="assets/images/contact-banner.png" alt="Contact Sarvahit Seva Trust" class="img-fluid rounded-4 shadow-sm border border-2 border-white"/>
+        </div>
       </div>
+    </div>
+  </header>
 
-      <div class="row g-5">
-        <div class="col-lg-6 d-flex flex-column gap-3">
-          <div class="card p-4 rounded-4 shadow-sm border-0 bg-body-tertiary d-flex flex-row align-items-center gap-3">
-            <div class="p-3 rounded-circle bg-success-subtle text-success">
-              <i class="bi bi-telephone-fill fs-3"></i>
-            </div>
+  <!-- DIRECT QUICK CONTACT CARDS GRID -->
+  <section class="py-5 bg-body">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Phone Card -->
+        <div class="col-md-6 col-lg-3 fade-up stagger-1">
+          <div class="card p-4 rounded-4 shadow-sm border-0 bg-body-tertiary h-100 d-flex flex-column justify-content-between">
             <div>
-              <h5 class="fw-bold mb-1" data-hi="फ़ोन संपर्क" data-en="Call Us">फ़ोन संपर्क</h5>
-              <a href="tel:+918953078333" class="text-decoration-none text-body fw-bold">+91 89530 78333</a>
+              <div class="p-3 rounded-circle bg-success-subtle text-success d-inline-flex mb-3">
+                <i class="bi bi-telephone-fill fs-3"></i>
+              </div>
+              <h5 class="fw-bold mb-1" data-hi="फ़ोन कॉल" data-en="Direct Call">फ़ोन कॉल</h5>
+              <p class="text-body-secondary small mb-3" data-hi="सीधे संपर्क या सहायता के लिए डायल करें" data-en="Dial for immediate support or inquiry">सीधे संपर्क या सहायता के लिए डायल करें</p>
+              <a href="tel:+918953078333" class="fw-bold text-success text-decoration-none fs-5 d-block mb-3">+91 89530 78333</a>
             </div>
-          </div>
-
-          <div class="card p-4 rounded-4 shadow-sm border-0 bg-body-tertiary d-flex flex-row align-items-center gap-3">
-            <div class="p-3 rounded-circle bg-warning-subtle text-warning">
-              <i class="bi bi-envelope-fill fs-3"></i>
-            </div>
-            <div>
-              <h5 class="fw-bold mb-1" data-hi="ईमेल पता" data-en="Email Us">ईमेल पता</h5>
-              <a href="mailto:sarvhitsevatrust@gmail.com" class="text-decoration-none text-body fw-bold">sarvhitsevatrust@gmail.com</a>
-            </div>
-          </div>
-
-          <div class="card p-4 rounded-4 shadow-sm border-0 bg-body-tertiary d-flex flex-row align-items-center gap-3">
-            <div class="p-3 rounded-circle bg-info-subtle text-info">
-              <i class="bi bi-geo-alt-fill fs-3"></i>
-            </div>
-            <div>
-              <h5 class="fw-bold mb-1" data-hi="कार्यालय पता" data-en="Visit Us">कार्यालय पता</h5>
-              <p class="text-body-secondary small mb-0" data-hi="ग्राम- लहुवा खुर्द, पोस्ट- पहलना, विकास खंड- पहलना, तहसील- लालगंज, जिला- आजमगढ़, उत्तर प्रदेश - 276202" data-en="Village Lahua Khurd, Post Office Palhna, Development Block Palhna, Tehsil Lalganj, District Azamgarh, Uttar Pradesh - 276202">
-                ग्राम- लहुवा खुर्द, पोस्ट- पहलना, विकास खंड- पहलना, तहसील- लालगंज, जिला- आजमगढ़, उत्तर प्रदेश - 276202
-              </p>
-            </div>
+            <a href="tel:+918953078333" class="btn btn-outline-success rounded-pill w-100 fw-bold">
+              <i class="bi bi-telephone me-1"></i> <span data-hi="कॉल करें" data-en="Call Now">कॉल करें</span>
+            </a>
           </div>
         </div>
 
-        <div class="col-lg-6">
-          <div class="card p-4 p-md-5 rounded-4 shadow-sm border-0 bg-body-tertiary">
-            <h4 class="fw-bold text-success mb-3" data-hi="संदेश भेजें" data-en="Send Us a Message">संदेश भेजें</h4>
+        <!-- Email Card -->
+        <div class="col-md-6 col-lg-3 fade-up stagger-2">
+          <div class="card p-4 rounded-4 shadow-sm border-0 bg-body-tertiary h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="p-3 rounded-circle bg-warning-subtle text-warning d-inline-flex mb-3">
+                <i class="bi bi-envelope-fill fs-3"></i>
+              </div>
+              <h5 class="fw-bold mb-1" data-hi="ईमेल पता" data-en="Official Email">ईमेल पता</h5>
+              <p class="text-body-secondary small mb-3" data-hi="प्रस्ताव, मीडिया व औपचारिक पत्राचार हेतु" data-en="For proposals, media & formal letters">प्रस्ताव, मीडिया व औपचारिक पत्राचार हेतु</p>
+              <a href="mailto:sarvhitsevatrust@gmail.com" class="fw-bold text-warning text-decoration-none small d-block mb-3 text-break">sarvhitsevatrust@gmail.com</a>
+            </div>
+            <a href="mailto:sarvhitsevatrust@gmail.com" class="btn btn-outline-warning rounded-pill w-100 fw-bold text-dark">
+              <i class="bi bi-envelope me-1"></i> <span data-hi="ईमेल भेजें" data-en="Send Email">ईमेल भेजें</span>
+            </a>
+          </div>
+        </div>
 
-            <div id="form-success-alert" class="alert alert-success d-none" role="alert" data-hi="धन्यवाद! आपका संदेश प्राप्त हुआ।" data-en="Thank you! Your message has been received.">
-              धन्यवाद! आपका संदेश प्राप्त हुआ।
+        <!-- WhatsApp Card -->
+        <div class="col-md-6 col-lg-3 fade-up stagger-3">
+          <div class="card p-4 rounded-4 shadow-sm border-0 bg-body-tertiary h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="p-3 rounded-circle bg-success text-white d-inline-flex mb-3">
+                <i class="bi bi-whatsapp fs-3"></i>
+              </div>
+              <h5 class="fw-bold mb-1" data-hi="व्हाट्सएप चैट" data-en="WhatsApp Helpdesk">व्हाट्सएप चैट</h5>
+              <p class="text-body-secondary small mb-3" data-hi="तुरंत संदेश या दस्तावेज भेजने के लिए" data-en="Instant message or quick query">तुरंत संदेश या दस्तावेज भेजने के लिए</p>
+              <a href="https://wa.me/918953078333" target="_blank" class="fw-bold text-success text-decoration-none fs-5 d-block mb-3">+91 89530 78333</a>
+            </div>
+            <a href="https://wa.me/918953078333" target="_blank" class="btn btn-success rounded-pill w-100 fw-bold">
+              <i class="bi bi-whatsapp me-1"></i> <span data-hi="चैट शुरू करें" data-en="Start Chat">चैट शुरू करें</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Address Card -->
+        <div class="col-md-6 col-lg-3 fade-up stagger-4">
+          <div class="card p-4 rounded-4 shadow-sm border-0 bg-body-tertiary h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="p-3 rounded-circle bg-info-subtle text-info d-inline-flex mb-3">
+                <i class="bi bi-geo-alt-fill fs-3"></i>
+              </div>
+              <h5 class="fw-bold mb-1" data-hi="मुख्य कार्यालय" data-en="Registered Office">मुख्य कार्यालय</h5>
+              <p class="text-body-secondary small mb-3" data-hi="ग्राम- लहुवा खुर्द, पोस्ट- पहलना, लालगंज, आजमगढ़ - 276202" data-en="Village Lahua Khurd, Post Palhna, Lalganj, Azamgarh - 276202">
+                ग्राम- लहुवा खुर्द, पोस्ट- पहलना, लालगंज, आजमगढ़ - 276202
+              </p>
+            </div>
+            <a href="#map-section" class="btn btn-outline-info rounded-pill w-100 fw-bold">
+              <i class="bi bi-map me-1"></i> <span data-hi="मानचित्र देखें" data-en="View Map">मानचित्र देखें</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTACT FORM & OFFICE HOURS SECTION -->
+  <section class="py-5 bg-body-tertiary">
+    <div class="container py-4">
+      <div class="row g-5 align-items-start">
+        
+        <!-- Left Side: Interactive Contact Form -->
+        <div class="col-lg-7 fade-up stagger-1">
+          <div class="card p-4 p-md-5 rounded-4 shadow-sm border-0 bg-body">
+            <h3 class="fw-bold text-success mb-1" data-hi="संदेश या पूछताछ भेजें" data-en="Send Message or Inquiry">संदेश या पूछताछ भेजें</h3>
+            <p class="text-body-secondary small mb-4" data-hi="कृपया नीचे दी गई जानकारी भरें। हमारी टीम जल्द ही उत्तर देगी।" data-en="Please provide details below; our team will reply promptly.">
+              कृपया नीचे दी गई जानकारी भरें। हमारी टीम जल्द ही उत्तर देगी।
+            </p>
+
+            <div id="form-success-alert" class="alert alert-success d-none mb-4 rounded-3 p-3 shadow-sm border-0" role="alert">
+              <div class="d-flex align-items-center gap-3">
+                <i class="bi bi-check-circle-fill fs-2 text-success"></i>
+                <div>
+                  <h6 class="fw-bold mb-1" data-hi="संदेश सफलतापूर्वक भेजा गया!" data-en="Message Sent Successfully!">संदेश सफलतापूर्वक भेजा गया!</h6>
+                  <p class="mb-0 small" data-hi="धन्यवाद! आपका संदेश प्राप्त हो गया है। सर्वहित सेवा ट्रस्ट की टीम जल्द ही आपसे संपर्क करेगी।" data-en="Thank you! Your message has been received. Our team will contact you shortly.">
+                    धन्यवाद! आपका संदेश प्राप्त हो गया है। सर्वहित सेवा ट्रस्ट की टीम जल्द ही आपसे संपर्क करेगी।
+                  </p>
+                </div>
+              </div>
             </div>
 
             <form id="contact-form">
-              <div class="mb-3">
-                <label class="form-label fw-bold" data-hi="नाम | Full Name" data-en="Full Name">नाम</label>
-                <input type="text" class="form-control rounded-3" required data-hi="अपना नाम दर्ज करें" data-en="Enter full name" placeholder="अपना नाम दर्ज करें"/>
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-bold" data-hi="पूरा नाम *" data-en="Full Name *">पूरा नाम *</label>
+                  <input type="text" class="form-control form-control-lg rounded-3" required data-hi="अपना नाम दर्ज करें" data-en="Enter full name" placeholder="अपना नाम दर्ज करें"/>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-bold" data-hi="मोबाइल नंबर *" data-en="Mobile Number *">मोबाइल नंबर *</label>
+                  <input type="tel" class="form-control form-control-lg rounded-3" required data-hi="+91 89530 78333" data-en="+91 89530 78333" placeholder="+91 89530 78333"/>
+                </div>
               </div>
-              <div class="mb-3">
-                <label class="form-label fw-bold" data-hi="ईमेल | Email" data-en="Email Address">ईमेल</label>
-                <input type="email" class="form-control rounded-3" required data-hi="नाम@डोमेन.com" data-en="name@domain.com" placeholder="नाम@डोमेन.com"/>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-bold" data-hi="ईमेल पता *" data-en="Email Address *">ईमेल पता *</label>
+                  <input type="email" class="form-control form-control-lg rounded-3" required data-hi="name@example.com" data-en="name@example.com" placeholder="name@example.com"/>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-bold" data-hi="पूछताछ का प्रकार *" data-en="Inquiry Category *">पूछताछ का प्रकार *</label>
+                  <select class="form-select form-select-lg rounded-3" required>
+                    <option data-hi="सामान्य पूछताछ (General Inquiry)" data-en="General Inquiry">सामान्य पूछताछ (General Inquiry)</option>
+                    <option data-hi="सहयोग / दान संबंधी (Donation Support)" data-en="Donation & Support">सहयोग / दान संबंधी (Donation Support)</option>
+                    <option data-hi="स्वयंसेवक सहायता (Volunteer Application)" data-en="Volunteer Application">स्वयंसेवक सहायता (Volunteer Application)</option>
+                    <option data-hi="मीडिया व साझेदारी (Media & Partnership)" data-en="Media & Partnership">मीडिया व साझेदारी (Media & Partnership)</option>
+                  </select>
+                </div>
               </div>
+
               <div class="mb-3">
-                <label class="form-label fw-bold" data-hi="मोबाइल | Mobile Number" data-en="Mobile Number">मोबाइल नंबर</label>
-                <input type="tel" class="form-control rounded-3" required data-hi="+91 89530 78333" data-en="+91 89530 78333" placeholder="+91 89530 78333"/>
+                <label class="form-label fw-bold" data-hi="विषय *" data-en="Subject *">विषय *</label>
+                <input type="text" class="form-control form-control-lg rounded-3" required data-hi="विषय दर्ज करें" data-en="Enter subject" placeholder="विषय दर्ज करें"/>
               </div>
-              <div class="mb-3">
-                <label class="form-label fw-bold" data-hi="विषय | Subject" data-en="Subject">विषय</label>
-                <input type="text" class="form-control rounded-3" required data-hi="विषय दर्ज करें" data-en="Enter subject" placeholder="विषय दर्ज करें"/>
-              </div>
+
               <div class="mb-4">
-                <label class="form-label fw-bold" data-hi="संदेश | Message" data-en="Message">संदेश</label>
-                <textarea class="form-control rounded-3" rows="4" required data-hi="अपना संदेश यहाँ लिखें..." data-en="Write your message here..." placeholder="अपना संदेश यहाँ लिखें..."></textarea>
+                <label class="form-label fw-bold" data-hi="संदेश *" data-en="Message *">संदेश *</label>
+                <textarea class="form-control rounded-3" rows="4" required data-hi="अपना संदेश विस्तृत रूप में यहाँ लिखें..." data-en="Write your message details here..." placeholder="अपना संदेश विस्तृत रूप में यहाँ लिखें..."></textarea>
               </div>
-              <button type="submit" class="btn btn-trust-primary btn-lg w-100">
+
+              <button type="submit" class="btn btn-trust-primary btn-lg w-100 py-3 fw-bold">
+                <i class="bi bi-send-fill me-2"></i>
                 <span data-hi="संदेश भेजें" data-en="Send Message">संदेश भेजें</span>
               </button>
             </form>
           </div>
         </div>
+
+        <!-- Right Side: Working Hours & Office Information -->
+        <div class="col-lg-5 fade-up stagger-2">
+          <!-- Working Hours Card -->
+          <div class="card p-4 rounded-4 shadow-sm border-0 bg-body mb-4">
+            <h5 class="fw-bold text-success mb-3" data-hi="कार्यालय समय" data-en="Office Working Hours">
+              <i class="bi bi-clock-history me-2"></i>
+              <span data-hi="कार्यालय समय" data-en="Office Working Hours">कार्यालय समय</span>
+            </h5>
+            
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+              <li class="d-flex justify-content-between pb-2 border-bottom">
+                <span class="fw-semibold text-body-secondary" data-hi="सोमवार - शनिवार:" data-en="Monday - Saturday:">सोमवार - शनिवार:</span>
+                <span class="fw-bold text-success">09:00 AM - 06:00 PM</span>
+              </li>
+              <li class="d-flex justify-content-between pb-2 border-bottom">
+                <span class="fw-semibold text-body-secondary" data-hi="रविवार:" data-en="Sunday:">रविवार:</span>
+                <span class="fw-bold text-warning" data-hi="अपॉइंटमेंट आधार पर" data-en="By Appointment Only">अपॉइंटमेंट आधार पर</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span class="fw-semibold text-body-secondary" data-hi="आपातकालीन सेवा:" data-en="Emergency Support:">आपातकालीन सेवा:</span>
+                <span class="fw-bold text-danger" data-hi="24x7 उपलब्ध" data-en="24x7 Available">24x7 उपलब्ध</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Response Commitment Card -->
+          <div class="card p-4 rounded-4 shadow-sm border-0 bg-success text-white mb-4">
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <i class="bi bi-lightning-charge-fill fs-2 text-warning"></i>
+              <h5 class="fw-bold mb-0" data-hi="त्वरित प्रतिक्रिया" data-en="Quick Response">त्वरित प्रतिक्रिया</h5>
+            </div>
+            <p class="small mb-0 opacity-90" data-hi="हम सभी प्रासंगिक प्रश्नों और ईमेल का जवाब 24 से 48 घंटों के भीतर देने के लिए पूर्णतः प्रतिबद्ध हैं।" data-en="We are committed to responding to all legitimate inquiries and emails within 24 to 48 hours.">
+              हम सभी प्रासंगिक प्रश्नों और ईमेल का जवाब 24 से 48 घंटों के भीतर देने के लिए पूर्णतः प्रतिबद्ध हैं।
+            </p>
+          </div>
+
+          <!-- Registered NGO Info Box -->
+          <div class="card p-4 rounded-4 shadow-sm border-0 bg-body">
+            <h6 class="fw-bold text-warning mb-2" data-hi="संस्था का विवरण" data-en="Organization Details">संस्था का विवरण</h6>
+            <table class="table table-borderless table-sm mb-0 small">
+              <tbody>
+                <tr>
+                  <td class="text-body-secondary ps-0" data-hi="संस्था का नाम:" data-en="Name:">संस्था का नाम:</td>
+                  <td class="fw-bold text-end pe-0">Sarvahit Seva Trust</td>
+                </tr>
+                <tr>
+                  <td class="text-body-secondary ps-0" data-hi="पंजीकरण संख्या:" data-en="Reg No.:">पंजीकरण संख्या:</td>
+                  <td class="fw-bold text-success text-end pe-0">UP/2026/1144009</td>
+                </tr>
+                <tr>
+                  <td class="text-body-secondary ps-0" data-hi="मुख्यालय:" data-en="Headquarters:">मुख्यालय:</td>
+                  <td class="fw-bold text-end pe-0">Azamgarh, UP, India</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
       </div>
     </div>
-  </main>
+  </section>
 
-  <footer class="bg-dark text-white py-4 text-center">
-    <small>© 2026 Sarvahit Seva Trust | Registration No. UP/2026/1144009</small>
+  <!-- LOCATION MAP SECTION -->
+  <section class="py-5 bg-body" id="map-section">
+    <div class="container py-4">
+      <div class="text-center max-w-2xl mx-auto mb-4 fade-up">
+        <span class="text-secondary fw-bold text-uppercase tracking-wider small" data-hi="मानचित्र स्थान" data-en="MAP LOCATION">मानचित्र स्थान</span>
+        <h2 class="display-5 fw-bold mt-2" data-hi="हमारा स्थान ढूंढें" data-en="Find Our Location">हमारा स्थान ढूंढें</h2>
+        <p class="text-body-secondary" data-hi="ग्राम- लहुवा खुर्द, पोस्ट- पहलना, ब्लॉक- पहलना, तहसील- लालगंज, जिला- आजमगढ़, उत्तर प्रदेश - 276202" data-en="Gram Lahua Khurd, Post Palhna, Tehsil Lalganj, Azamgarh, Uttar Pradesh - 276202">
+          ग्राम- लहुवा खुर्द, पोस्ट- पहलना, ब्लॉक- पहलना, तहसील- लालगंज, जिला- आजमगढ़, उत्तर प्रदेश - 276202
+        </p>
+      </div>
+
+      <div class="card rounded-4 border-0 shadow-sm overflow-hidden fade-up">
+        <div class="ratio ratio-21x9" style="min-height: 380px;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115160.77257973059!2d82.9000!3d25.9000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399047bf1b2a95e3%3A0x89e5a1b32d207!2sLalganj%2C%20Azamgarh%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Sarvahit Seva Trust Location Map">
+          </iframe>
+        </div>
+        <div class="card-footer bg-body p-3 text-center">
+          <a href="https://maps.google.com/?q=Lalganj+Azamgarh+Uttar+Pradesh" target="_blank" class="btn btn-trust-primary btn-sm rounded-pill px-4">
+            <i class="bi bi-geo-alt-fill me-1"></i>
+            <span data-hi="गूगल मैप्स पर दिशा-निर्देश प्राप्त करें" data-en="Get Directions on Google Maps">गूगल मैप्स पर दिशा-निर्देश प्राप्त करें</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white pt-5 pb-4 border-top border-success">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <img src="assets/images/logo.png" alt="Logo" style="height: 36px; object-fit: contain;"/>
+            <h4 class="fw-bold text-success mb-0" data-hi="सर्वहित सेवा ट्रस्ट" data-en="SARVAHIT SEVA TRUST">सर्वहित सेवा ट्रस्ट</h4>
+          </div>
+          <p class="text-warning font-motto small mb-3" data-hi="सेवा | सहयोग | मानवता | जनकल्याण" data-en="Service | Cooperation | Humanity | Public Welfare">सेवा | सहयोग | मानवता | जनकल्याण</p>
+          <p class="text-white-50 small mb-3" data-hi="मानव सेवा, शिक्षा, स्वास्थ्य, पर्यावरण संरक्षण एवं जनकल्याण के प्रति समर्पित।" data-en="Dedicated to human service, education, healthcare, environment protection and public welfare.">
+            मानव सेवा, शिक्षा, स्वास्थ्य, पर्यावरण संरक्षण एवं जनकल्याण के प्रति समर्पित।
+          </p>
+          <small class="badge bg-success-subtle text-success" data-hi="पंजीकरण संख्या: UP/2026/1144009" data-en="Registration No: UP/2026/1144009">पंजीकरण संख्या: UP/2026/1144009</small>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold text-warning mb-3" data-hi="त्वरित लिंक" data-en="Quick Links">त्वरित लिंक</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small text-white-50">
+            <li><a href="index.html" class="text-white-50 text-decoration-none hover-text-white" data-hi="मुख्य पृष्ठ" data-en="Home">मुख्य पृष्ठ</a></li>
+            <li><a href="about.html" class="text-white-50 text-decoration-none hover-text-white" data-hi="हमारे बारे में" data-en="About Us">हमारे बारे में</a></li>
+            <li><a href="projects.html" class="text-white-50 text-decoration-none hover-text-white" data-hi="कार्यक्रम" data-en="Programs">कार्यक्रम</a></li>
+            <li><a href="gallery.html" class="text-white-50 text-decoration-none hover-text-white" data-hi="गैलरी" data-en="Gallery">गैलरी</a></li>
+            <li><a href="team.html" class="text-white-50 text-decoration-none hover-text-white" data-hi="टीम" data-en="Team">टीम</a></li>
+            <li><a href="volunteer.html" class="text-white-50 text-decoration-none hover-text-white" data-hi="हमसे जुड़ें" data-en="Volunteer">हमसे जुड़ें</a></li>
+            <li><a href="contact.html" class="text-white-50 text-decoration-none hover-text-white" data-hi="संपर्क" data-en="Contact">संपर्क</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h6 class="fw-bold text-warning mb-3" data-hi="कार्यक्रम" data-en="Programs">कार्यक्रम</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small text-white-50">
+            <li data-hi="शिक्षा | Education" data-en="Education">शिक्षा</li>
+            <li data-hi="स्वास्थ्य | Healthcare" data-en="Healthcare">स्वास्थ्य</li>
+            <li data-hi="पर्यावरण | Environment" data-en="Environment">पर्यावरण</li>
+            <li data-hi="सामाजिक सहायता | Social Support" data-en="Social Support">सामाजिक सहायता</li>
+            <li data-hi="महिला सशक्तिकरण | Women Empowerment" data-en="Women Empowerment">महिला सशक्तिकरण</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h6 class="fw-bold text-warning mb-3" data-hi="संपर्क" data-en="Contact Us">संपर्क</h6>
+          <p class="text-white-50 small mb-2"><i class="bi bi-telephone-fill me-2 text-success"></i>+91 89530 78333</p>
+          <p class="text-white-50 small mb-2"><i class="bi bi-envelope-fill me-2 text-success"></i>sarvhitsevatrust@gmail.com</p>
+          <p class="text-white-50 small mb-3"><i class="bi bi-geo-alt-fill me-2 text-success"></i>आजमगढ़, उत्तर प्रदेश - 276202</p>
+          <div class="d-flex gap-2">
+            <a href="https://wa.me/918953078333" target="_blank" class="btn btn-sm btn-outline-success rounded-circle"><i class="bi bi-whatsapp"></i></a>
+            <a href="mailto:sarvhitsevatrust@gmail.com" class="btn btn-sm btn-outline-warning rounded-circle"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary"/>
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small text-white-50">
+        <div>
+          © 2026 Sarvahit Seva Trust | सर्वाधिकार सुरक्षित | All Rights Reserved
+        </div>
+        <div>
+          Registration No. UP/2026/1144009
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <a href="https://wa.me/918953078333?text=नमस्ते%2C%20मैं%20सर्वहित%20सेवा%20ट्रस्ट%20के%20बारे%20में%20अधिक%20जानकारी%20प्राप्त%20करना%20चाहता%2Fचाहती%20हूँ।" target="_blank" class="btn-whatsapp-float" title="WhatsApp Us">
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/918953078333?text=नमस्ते%2C%20मैं%20सर्वहित%20सेवा%20ट्रस्ट%20के%20बारे%20में%20अधिक%20जानकारी%20प्राप्त%20करना%20चाहता%2Fचाहती%20हूँ।" target="_blank" class="btn-whatsapp-float" title="WhatsApp पर संपर्क करें | Contact Us on WhatsApp">
     <i class="bi bi-whatsapp"></i>
   </a>
-  <button id="back-to-top" class="btn-back-to-top"><i class="bi bi-arrow-up"></i></button>
 
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="btn-back-to-top" title="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
   <script src="assets/js/app.js"></script>
 </body>
 </html>

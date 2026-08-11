@@ -3,17 +3,47 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>स्वयंसेवक बनें | Volunteer - Sarvahit Seva Trust</title>
+  <title>स्वयंसेवक बनें | Become a Volunteer - Sarvahit Seva Trust</title>
+  <meta name="description" content="सर्वहित सेवा ट्रस्ट से स्वयंसेवक के रूप में जुड़ें और शिक्षा, स्वास्थ्य, पर्यावरण व सामाजिक विकास में योगदान दें। Volunteer with Sarvahit Seva Trust (Registration No. UP/2026/1144009)."/>
+  <meta name="keywords" content="Sarvahit Seva Trust Volunteer, NGO Volunteer India, Azamgarh Volunteer, Social Work Registration, Volunteer Certificate"/>
+  <link rel="canonical" href="https://sarvahit.org/volunteer.html"/>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="स्वयंसेवक बनें | Become a Volunteer - Sarvahit Seva Trust"/>
+  <meta property="og:description" content="सेवा • सहयोग • मानवता • जनकल्याण | Join Sarvahit Seva Trust as a volunteer and make a difference."/>
+  <meta property="og:type" content="website"/>
+
+  <!-- Google Fonts & Bootstrap Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- Bootstrap 5 CSS Framework -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Custom Stylesheets -->
   <link rel="stylesheet" href="assets/css/main.css"/>
   <link rel="stylesheet" href="assets/css/components.css"/>
+  <link rel="stylesheet" href="assets/css/animations.css"/>
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Sarvahit Seva Trust",
+    "alternateName": "सर्वहित सेवा ट्रस्ट",
+    "identifier": "UP/2026/1144009",
+    "telephone": "+91 89530 78333",
+    "email": "sarvhitsevatrust@gmail.com",
+    "url": "https://sarvahit.org/volunteer.html"
+  }
+  </script>
 </head>
 <body>
-  <!-- Slim Top Info Bar -->
+
+  <!-- SLIM TOP INFORMATION BAR -->
   <div class="top-info-bar py-1 border-bottom border-dark border-opacity-25">
     <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
       <div class="d-flex align-items-center gap-2">
@@ -26,7 +56,8 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-lg sticky-navbar fixed-top bg-body-tertiary bg-opacity-75 backdrop-blur border-bottom shadow-sm">
+  <!-- STICKY NAVBAR HEADER -->
+  <nav class="navbar navbar-expand-lg sticky-navbar fixed-top bg-body-tertiary bg-opacity-90 backdrop-blur border-bottom shadow-sm">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
         <img src="assets/images/logo.png" alt="Sarvahit Seva Trust Logo" class="brand-logo-img"/>
@@ -35,7 +66,12 @@
           <span class="text-secondary font-motto" style="font-size: 11px;" data-hi="सेवा • सहयोग • मानवता • जनकल्याण" data-en="Service • Cooperation • Humanity">सेवा • सहयोग • मानवता • जनकल्याण</span>
         </div>
       </a>
-      <div class="collapse navbar-collapse show" id="nav">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPortal" aria-controls="navbarPortal" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarPortal">
         <ul class="navbar-nav ms-auto gap-lg-2 fw-semibold">
           <li class="nav-item"><a class="nav-link" href="index.html" data-hi="मुख्य पृष्ठ" data-en="Home">मुख्य पृष्ठ</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html" data-hi="हमारे बारे में" data-en="About Us">हमारे बारे में</a></li>
@@ -46,79 +82,636 @@
           <li class="nav-item"><a class="nav-link" href="contact.html" data-hi="संपर्क" data-en="Contact">संपर्क</a></li>
         </ul>
 
-        <div class="d-flex align-items-center gap-2 ms-lg-3">
-          <button id="lang-toggle" class="lang-toggle-btn d-flex align-items-center gap-1">
+        <div class="d-flex align-items-center gap-2 ms-lg-3 mt-3 mt-lg-0">
+          <button id="lang-toggle" class="lang-toggle-btn d-flex align-items-center gap-1" title="Switch Language">
             <i class="bi bi-translate"></i>
             <span id="lang-btn-text">English</span>
           </button>
-          <a href="index.html#donate" class="btn btn-trust-secondary" data-hi="सहयोग करें" data-en="Donate Now">सहयोग करें</a>
+
+          <button id="dark-mode-toggle" class="btn btn-sm btn-outline-secondary rounded-circle p-2" aria-label="Toggle Dark Mode">
+            <i class="bi bi-moon-fill"></i>
+          </button>
+
+          <a href="index.html#donate" class="btn btn-trust-secondary d-flex align-items-center gap-1 px-3 py-2">
+            <span data-hi="सहयोग करें" data-en="Donate Now">सहयोग करें</span>
+            <i class="bi bi-heart-fill"></i>
+          </a>
         </div>
       </div>
     </div>
   </nav>
 
-  <main class="py-5 mt-5">
-    <div class="container py-5" style="max-width: 800px;">
-      <div class="text-center mb-5">
-        <i class="bi bi-person-heart display-2 text-success mb-3"></i>
-        <h1 class="display-5 fw-bold text-success mb-2" data-hi="आप भी बदलाव का हिस्सा बनें" data-en="Be a Part of the Change">आप भी बदलाव का हिस्सा बनें</h1>
-        <p class="lead text-body-secondary" data-hi="अपने समय, कौशल और सहयोग के माध्यम से समाज में सकारात्मक बदलाव लाने के लिए हमारे साथ जुड़ें।" data-en="Join us and contribute your time, skills and support to create positive change in society.">
-          अपने समय, कौशल और सहयोग के माध्यम से समाज में सकारात्मक बदलाव लाने के लिए हमारे साथ जुड़ें।
+  <!-- HERO BANNER SECTION -->
+  <header class="py-5 mt-5 bg-body-tertiary position-relative overflow-hidden border-bottom">
+    <div class="position-absolute top-0 end-0 w-50 h-100 bg-success-subtle opacity-25 rounded-start-pill d-none d-lg-block"></div>
+    <div class="container py-4 position-relative z-1">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7 text-center text-lg-start">
+          <div class="fade-up d-inline-flex align-items-center gap-2 px-3 py-1.5 rounded-pill bg-success-subtle border border-success-subtle text-success fw-bold text-uppercase mb-3" style="font-size: 13px;">
+            <i class="bi bi-heart-pulse-fill text-warning"></i>
+            <span data-hi="राष्ट्र निर्माण में आपकी भागीदारी" data-en="Your Role in Nation Building">राष्ट्र निर्माण में आपकी भागीदारी</span>
+          </div>
+
+          <h1 class="fade-up stagger-1 display-4 fw-bold text-body mb-3" data-hi="आप भी बदलाव के सारथी बनें" data-en="Be the Driver of Social Change">
+            आप भी बदलाव के सारथी बनें
+          </h1>
+
+          <p class="fade-up stagger-2 lead text-body-secondary mb-4 max-w-2xl" data-hi="सर्वहित सेवा ट्रस्ट के साथ जुड़कर अपने समय, कौशल और ऊर्जा का उपयोग जरूरतमंद बच्चों, महिलाओं व ग्रामीण परिवारों के सशक्तिकरण में करें।" data-en="Join hands with Sarvahit Seva Trust to contribute your time, skills, and passion toward empowering children, women, and rural communities.">
+            सर्वहित सेवा ट्रस्ट के साथ जुड़कर अपने समय, कौशल और ऊर्जा का उपयोग जरूरतमंद बच्चों, महिलाओं व ग्रामीण परिवारों के सशक्तिकरण में करें।
+          </p>
+
+          <div class="fade-up stagger-3 d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+            <a href="#volunteer-form-section" class="btn btn-trust-primary btn-lg d-inline-flex align-items-center gap-2">
+              <span data-hi="अभी फॉर्म भरें" data-en="Register Now">अभी फॉर्म भरें</span>
+              <i class="bi bi-arrow-down-circle-fill"></i>
+            </a>
+            <a href="#why-volunteer" class="btn btn-trust-outline btn-lg d-inline-flex align-items-center gap-2">
+              <span data-hi="लाभ एवं जानकारी" data-en="Learn Benefits">लाभ एवं जानकारी</span>
+              <i class="bi bi-info-circle-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5 text-center fade-up stagger-3">
+          <div class="position-relative d-inline-block">
+            <img src="assets/images/volunteer-banner.png" alt="Sarvahit Volunteers" class="img-fluid rounded-4 shadow-lg border border-3 border-white"/>
+            <div class="position-absolute bottom-0 start-0 m-3 p-3 bg-body rounded-3 shadow border text-start d-flex align-items-center gap-3">
+              <div class="p-2 rounded-circle bg-warning text-dark"><i class="bi bi-award-fill fs-4"></i></div>
+              <div>
+                <h6 class="fw-bold mb-0 text-success" data-hi="प्रमाण पत्र एवं सम्मान" data-en="Certificate & Recognition">प्रमाण पत्र एवं सम्मान</h6>
+                <small class="text-body-secondary" data-hi="हर स्वयंसेवक को आधिकारिक सर्टिफिकेट" data-en="Official certificate for every volunteer">हर स्वयंसेवक को आधिकारिक सर्टिफिकेट</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Impact Stats -->
+      <div class="row g-3 mt-4 pt-3 border-top fade-up stagger-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="p-3 bg-body rounded-4 border shadow-sm">
+            <h3 class="fw-bold text-success mb-1">150+</h3>
+            <span class="text-body-secondary small" data-hi="सक्रिय स्वयंसेवक" data-en="Active Volunteers">सक्रिय स्वयंसेवक</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 bg-body rounded-4 border shadow-sm">
+            <h3 class="fw-bold text-warning mb-1">25+</h3>
+            <span class="text-body-secondary small" data-hi="गांवों में प्रभाव" data-en="Villages Reached">गांवों में प्रभाव</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 bg-body rounded-4 border shadow-sm">
+            <h3 class="fw-bold text-info mb-1">500+</h3>
+            <span class="text-body-secondary small" data-hi="सेवा के घंटे" data-en="Hours of Service">सेवा के घंटे</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 bg-body rounded-4 border shadow-sm">
+            <h3 class="fw-bold text-success mb-1">100%</h3>
+            <span class="text-body-secondary small" data-hi="पारदर्शिता व सम्मान" data-en="Transparency & Dedicated">पारदर्शिता व सम्मान</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- WHY VOLUNTEER SECTION -->
+  <section class="py-5 bg-body" id="why-volunteer">
+    <div class="container py-4">
+      <div class="text-center max-w-2xl mx-auto mb-5 fade-up">
+        <span class="text-secondary fw-bold text-uppercase tracking-wider small" data-hi="लाभ एवं अवसर" data-en="BENEFITS & OPPORTUNITIES">लाभ एवं अवसर</span>
+        <h2 class="display-5 fw-bold mt-2" data-hi="सर्वहित सेवा ट्रस्ट से क्यों जुड़ें?" data-en="Why Volunteer With Us?">सर्वहित सेवा ट्रस्ट से क्यों जुड़ें?</h2>
+        <p class="text-body-secondary lead" data-hi="स्वयंसेवा केवल दूसरों की सहायता करना नहीं, बल्कि स्वयं के व्यक्तित्व और नेतृत्व कौशल को निखारने का सशक्त माध्यम है।" data-en="Volunteering is not only about helping others, but also a transformative step toward refining your own leadership and soft skills.">
+          स्वयंसेवा केवल दूसरों की सहायता करना नहीं, बल्कि स्वयं के व्यक्तित्व और नेतृत्व कौशल को निखारने का सशक्त माध्यम है।
         </p>
       </div>
 
-      <div class="card p-4 p-md-5 rounded-4 shadow-sm border-0 bg-body-tertiary">
-        <form onsubmit="event.preventDefault(); alert(document.body.classList.contains('lang-en') ? 'Thank you for registering as a volunteer!' : 'धन्यवाद! स्वयंसेवक पंजीकरण सफल हुआ।');">
-          <div class="row g-3 mb-3">
-            <div class="col-md-6">
-              <label class="form-label fw-bold" data-hi="पूरा नाम *" data-en="Full Name *">पूरा नाम *</label>
-              <input type="text" class="form-control form-control-lg rounded-3" placeholder="अपना नाम दर्ज करें" required/>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 fade-up stagger-1">
+          <div class="p-4 rounded-4 bg-body-tertiary border h-100 card-impact border-secondary-top">
+            <div class="p-3 rounded-circle bg-success-subtle text-success d-inline-flex mb-3">
+              <i class="bi bi-file-earmark-badge-fill fs-2"></i>
             </div>
-            <div class="col-md-6">
-              <label class="form-label fw-bold" data-hi="मोबाइल नंबर *" data-en="Mobile Number *">मोबाइल नंबर *</label>
-              <input type="tel" class="form-control form-control-lg rounded-3" placeholder="+91 89530 78333" required/>
+            <h5 class="fw-bold mb-2" data-hi="प्रमाण पत्र एवं अनुशंसा" data-en="Certificate & Reference">प्रमाण पत्र एवं अनुशंसा</h5>
+            <p class="text-body-secondary small mb-0" data-hi="सक्रिय योगदान पर संस्था द्वारा आधिकारिक Certificate of Appreciation तथा भविष्य के लिए अनुशंसा पत्र (LOR) प्रदान किया जाता है।" data-en="Receive an official Certificate of Appreciation and Recommendation Letter (LOR) upon completing active service.">
+              सक्रिय योगदान पर संस्था द्वारा आधिकारिक Certificate of Appreciation तथा भविष्य के लिए अनुशंसा पत्र (LOR) प्रदान किया जाता है।
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 fade-up stagger-2">
+          <div class="p-4 rounded-4 bg-body-tertiary border h-100 card-impact border-info-top">
+            <div class="p-3 rounded-circle bg-warning-subtle text-warning d-inline-flex mb-3">
+              <i class="bi bi-lightbulb-fill fs-2"></i>
             </div>
+            <h5 class="fw-bold mb-2" data-hi="नेतृत्व व कौशल विकास" data-en="Skill & Leadership">नेतृत्व व कौशल विकास</h5>
+            <p class="text-body-secondary small mb-0" data-hi="सामाजिक अभियानों के प्रबंधन, प्रोजेक्ट एक्ज़ीक्यूशन, पब्लिक स्पीकिंग और टीम वर्क का प्रत्यक्ष व्यावहारिक अनुभव।" data-en="Gain practical experience in program management, project execution, public speaking, and team leadership.">
+              सामाजिक अभियानों के प्रबंधन, प्रोजेक्ट एक्ज़ीक्यूशन, पब्लिक स्पीकिंग और टीम वर्क का प्रत्यक्ष व्यावहारिक अनुभव।
+            </p>
           </div>
+        </div>
 
-          <div class="mb-3">
-            <label class="form-label fw-bold" data-hi="ईमेल पता *" data-en="Email Address *">ईमेल पता *</label>
-            <input type="email" class="form-control form-control-lg rounded-3" placeholder="name@example.com" required/>
+        <div class="col-md-6 col-lg-3 fade-up stagger-3">
+          <div class="p-4 rounded-4 bg-body-tertiary border h-100 card-impact border-danger-top">
+            <div class="p-3 rounded-circle bg-info-subtle text-info d-inline-flex mb-3">
+              <i class="bi bi-people-fill fs-2"></i>
+            </div>
+            <h5 class="fw-bold mb-2" data-hi="सशक्त सामाजिक नेटवर्क" data-en="Strong Community Network">सशक्त सामाजिक नेटवर्क</h5>
+            <p class="text-body-secondary small mb-0" data-hi="अनुभवी समाजसेवियों, शिक्षकों, डॉक्टरों व ऊर्जावान युवा बदलावकर्ताओं के साथ मिलकर काम करने का बेहतरीन अवसर।" data-en="Connect and collaborate with experienced social workers, educators, doctors, and passionate youth leaders.">
+              अनुभवी समाजसेवियों, शिक्षकों, डॉक्टरों व ऊर्जावान युवा बदलावकर्ताओं के साथ मिलकर काम करने का बेहतरीन अवसर।
+            </p>
           </div>
+        </div>
 
-          <div class="mb-3">
-            <label class="form-label fw-bold" data-hi="सेवा का क्षेत्र" data-en="Area of Service">सेवा का क्षेत्र</label>
-            <select class="form-select form-select-lg rounded-3">
-              <option>शिक्षा एवं शिक्षण (Education & Teaching)</option>
-              <option>स्वास्थ्य शिविर (Health Camps)</option>
-              <option>वृक्षारोपण एवं पर्यावरण (Tree Plantation)</option>
-              <option>महिला सशक्तिकरण (Women Empowerment)</option>
-              <option>सामाजिक जागरूकता (Social Awareness)</option>
-            </select>
+        <div class="col-md-6 col-lg-3 fade-up stagger-4">
+          <div class="p-4 rounded-4 bg-body-tertiary border h-100 card-impact">
+            <div class="p-3 rounded-circle bg-danger-subtle text-danger d-inline-flex mb-3">
+              <i class="bi bi-heart-fill fs-2"></i>
+            </div>
+            <h5 class="fw-bold mb-2" data-hi="आत्मसंतोष और प्रभाव" data-en="Inner Satisfaction">आत्मसंतोष और प्रभाव</h5>
+            <p class="text-body-secondary small mb-0" data-hi="जरूरतमंद बच्चों और बुजुर्गों के चेहरे पर मुस्कान लाने और समाज में प्रत्यक्ष सकारात्मक परिवर्तन लाने का गहरा आत्मसंतोष।" data-en="Experience the true contentment of making a direct positive difference in the lives of needy children and elders.">
+              जरूरतमंद बच्चों और बुजुर्गों के चेहरे पर मुस्कान लाने और समाज में प्रत्यक्ष सकारात्मक परिवर्तन लाने का गहरा आत्मसंतोष।
+            </p>
           </div>
-
-          <div class="mb-4">
-            <label class="form-label fw-bold" data-hi="संदेश (वैकल्पिक)" data-en="Motivation (Optional)">संदेश (वैकल्पिक)</label>
-            <textarea class="form-control rounded-3" rows="3" placeholder="आप क्यों जुड़ना चाहते हैं?"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-trust-primary btn-lg w-100">
-            <span data-hi="स्वयंसेवक बनें" data-en="Become a Volunteer">स्वयंसेवक बनें</span>
-          </button>
-        </form>
+        </div>
       </div>
     </div>
-  </main>
+  </section>
 
-  <footer class="bg-dark text-white py-4 text-center">
-    <small>© 2026 Sarvahit Seva Trust | Registration No. UP/2026/1144009</small>
+  <!-- VOLUNTEER AVENUES / DOMAINS -->
+  <section class="py-5 bg-body-tertiary">
+    <div class="container py-4">
+      <div class="text-center max-w-2xl mx-auto mb-5 fade-up">
+        <span class="text-secondary fw-bold text-uppercase tracking-wider small" data-hi="सेवा के विकल्प" data-en="DOMAINS OF SERVICE">सेवा के विकल्प</span>
+        <h2 class="display-5 fw-bold mt-2" data-hi="आप किन क्षेत्रों में योगदान दे सकते हैं?" data-en="Where Can You Contribute?">आप किन क्षेत्रों में योगदान दे सकते हैं?</h2>
+        <p class="text-body-secondary" data-hi="अपनी रुचि और सुविधा के अनुसार अपने पसंदीदा क्षेत्र का चयन करें:" data-en="Choose your preferred field according to your skills and passion:">अपनी रुचि और सुविधा के अनुसार अपने पसंदीदा क्षेत्र का चयन करें:</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 fade-up stagger-1">
+          <div class="card h-100 rounded-4 border-0 shadow-sm overflow-hidden gallery-card">
+            <div class="position-relative overflow-hidden" style="height: 180px;">
+              <img src="assets/images/work-education.png" alt="Education Volunteer" class="w-100 h-100 object-fit-cover"/>
+              <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-success text-white px-3 py-1.5 rounded-pill"><i class="bi bi-book me-1"></i> <span data-hi="शिक्षा" data-en="Education">शिक्षा</span></span>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="fw-bold text-success mb-2" data-hi="शिक्षा मित्र (Teaching & Literacy)" data-en="Education Mentor">शिक्षा मित्र (Teaching & Literacy)</h5>
+              <p class="text-body-secondary small mb-0" data-hi="ग्रामीण व निर्धन बच्चों को पढ़ाना, पुस्तक वितरण, कंप्यूटर साक्षरता एवं प्रतियोगी परीक्षाओं का मार्गदर्शन करना।" data-en="Teaching underprivileged children, stationery distribution, basic computer education, and exam guidance.">
+                ग्रामीण व निर्धन बच्चों को पढ़ाना, पुस्तक वितरण, कंप्यूटर साक्षरता एवं प्रतियोगी परीक्षाओं का मार्गदर्शन करना।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-up stagger-2">
+          <div class="card h-100 rounded-4 border-0 shadow-sm overflow-hidden gallery-card">
+            <div class="position-relative overflow-hidden" style="height: 180px;">
+              <img src="assets/images/work-healthcare.png" alt="Health Volunteer" class="w-100 h-100 object-fit-cover"/>
+              <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-danger text-white px-3 py-1.5 rounded-pill"><i class="bi bi-activity me-1"></i> <span data-hi="स्वास्थ्य" data-en="Healthcare">स्वास्थ्य</span></span>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="fw-bold text-success mb-2" data-hi="स्वास्थ्य शिविर सहायक (Medical Camps)" data-en="Healthcare Assistant">स्वास्थ्य शिविर सहायक (Medical Camps)</h5>
+              <p class="text-body-secondary small mb-0" data-hi="निःशुल्क स्वास्थ्य जांच शिविर, रक्तदान शिविर एवं गांव-गांव में स्वास्थ्य जागरूकता फैलाने में सहयोग देना।" data-en="Assisting doctors in free health camps, organizing blood donation drives, and hygiene awareness camps.">
+                निःशुल्क स्वास्थ्य जांच शिविर, रक्तदान शिविर एवं गांव-गांव में स्वास्थ्य जागरूकता फैलाने में सहयोग देना।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-up stagger-3">
+          <div class="card h-100 rounded-4 border-0 shadow-sm overflow-hidden gallery-card">
+            <div class="position-relative overflow-hidden" style="height: 180px;">
+              <img src="assets/images/work-environment.png" alt="Tree Plantation Volunteer" class="w-100 h-100 object-fit-cover"/>
+              <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-warning text-dark px-3 py-1.5 rounded-pill"><i class="bi bi-tree me-1"></i> <span data-hi="पर्यावरण" data-en="Environment">पर्यावरण</span></span>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="fw-bold text-success mb-2" data-hi="पर्यावरण रक्षक (Eco-Warrior)" data-en="Tree Plantation & Eco Drive">पर्यावरण रक्षक (Eco-Warrior)</h5>
+              <p class="text-body-secondary small mb-0" data-hi="वृक्षारोपण अभियान, पौधे वितरण, जल संरक्षण एवं सिंगल यूज़ प्लास्टिक विरोधी अभियान का संचालन।" data-en="Tree plantation drives, sapling distribution, water conservation awareness, and clean community campaigns.">
+                वृक्षारोपण अभियान, पौधे वितरण, जल संरक्षण एवं सिंगल यूज़ प्लास्टिक विरोधी अभियान का संचालन।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-up stagger-1">
+          <div class="card h-100 rounded-4 border-0 shadow-sm overflow-hidden gallery-card">
+            <div class="position-relative overflow-hidden" style="height: 180px;">
+              <img src="assets/images/work-women.png" alt="Women Empowerment Volunteer" class="w-100 h-100 object-fit-cover"/>
+              <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-info text-white px-3 py-1.5 rounded-pill"><i class="bi bi-gender-female me-1"></i> <span data-hi="महिला सशक्तिकरण" data-en="Women Empowerment">महिला सशक्तिकरण</span></span>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="fw-bold text-success mb-2" data-hi="महिला सशक्तिकरण साथी" data-en="Women Empowerment Advocate">महिला सशक्तिकरण साथी</h5>
+              <p class="text-body-secondary small mb-0" data-hi="सिलाई व सिलाई केंद्र सहायता, महिला स्वास्थ्य एवं सेनेटरी नैपकिन जागरूकता तथा स्व-सहायता समूहों का सहयोग।" data-en="Supporting skill centers, sanitary pad distribution drives, health education, and women self-help initiatives.">
+                सिलाई व सिलाई केंद्र सहायता, महिला स्वास्थ्य एवं सेनेटरी नैपकिन जागरूकता तथा स्व-सहायता समूहों का सहयोग।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-up stagger-2">
+          <div class="card h-100 rounded-4 border-0 shadow-sm overflow-hidden gallery-card">
+            <div class="position-relative overflow-hidden" style="height: 180px;">
+              <img src="assets/images/work-social.png" alt="Relief Volunteer" class="w-100 h-100 object-fit-cover"/>
+              <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-secondary text-white px-3 py-1.5 rounded-pill"><i class="bi bi-box-seam me-1"></i> <span data-hi="सामाजिक सहायता" data-en="Social Support">सामाजिक सहायता</span></span>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="fw-bold text-success mb-2" data-hi="शीतकालीन व आपदा राहत" data-en="Relief & Social Service">शीतकालीन व आपदा राहत</h5>
+              <p class="text-body-secondary small mb-0" data-hi="सर्दियों में कंबलों का वितरण, जरूरतमंदों को भोजन वितरण तथा आपातकालीन सहायता अभियानों में भूमिका।" data-en="Blanket distribution in harsh winters, food drives for homeless and needy, and emergency community aid.">
+                सर्दियों में कंबलों का वितरण, जरूरतमंदों को भोजन वितरण तथा आपातकालीन सहायता अभियानों में भूमिका।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-up stagger-3">
+          <div class="card h-100 rounded-4 border-0 shadow-sm overflow-hidden gallery-card">
+            <div class="position-relative overflow-hidden" style="height: 180px;">
+              <img src="assets/images/work-culture.png" alt="Digital Media Volunteer" class="w-100 h-100 object-fit-cover"/>
+              <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill"><i class="bi bi-laptop me-1"></i> <span data-hi="ऑनलाइन / रिमोट" data-en="Online / Remote">ऑनलाइन / रिमोट</span></span>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="fw-bold text-success mb-2" data-hi="डिजिटल व मीडिया वॉलंटियर" data-en="Digital & Media Volunteer">डिजिटल व मीडिया वॉलंटियर</h5>
+              <p class="text-body-secondary small mb-0" data-hi="घर बैठे सोशल मीडिया जागरूकता, ग्राफिक्स डिजाइनिंग, कंटेंट लेखन एवं ऑनलाइन अभियानों का संचालन।" data-en="Remote volunteering: Social media awareness, content writing, poster design, and online campaign promotion.">
+                घर बैठे सोशल मीडिया जागरूकता, ग्राफिक्स डिजाइनिंग, कंटेंट लेखन एवं ऑनलाइन अभियानों का संचालन।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM SECTION WITH IMAGE & ELEVATED FORM CARD -->
+  <section class="py-5 bg-body" id="volunteer-form-section">
+    <div class="container py-4 max-w-5xl mx-auto">
+      <div class="text-center mb-5 fade-up">
+        <span class="badge bg-success-subtle text-success px-3 py-1.5 rounded-pill fw-bold text-uppercase mb-2" data-hi="ऑनलाइन पंजीकरण" data-en="ONLINE REGISTRATION">ऑनलाइन पंजीकरण</span>
+        <h2 class="display-5 fw-bold text-success mb-2" data-hi="स्वयंसेवक पंजीकरण फॉर्म" data-en="Volunteer Registration Form">स्वयंसेवक पंजीकरण फॉर्म</h2>
+        <p class="lead text-body-secondary" data-hi="कृपया नीचे दिया गया फॉर्म भरें, हमारी टीम शीघ्र ही आपसे संपर्क करेगी।" data-en="Please fill out the form below; our volunteer coordinator will contact you shortly.">
+          कृपया नीचे दिया गया फॉर्म भरें, हमारी टीम शीघ्र ही आपसे संपर्क करेगी।
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <!-- Left Side Highlights Card -->
+        <div class="col-lg-5 fade-up stagger-1">
+          <div class="card p-4 rounded-4 border-0 shadow bg-success text-white">
+            <h4 class="fw-bold mb-3 text-warning" data-hi="हमसे क्यों जुड़ें?" data-en="Why Join Us?">हमसे क्यों जुड़ें?</h4>
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-4">
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+                <span data-hi="100% स्वेच्छा और पारदर्शिता आधारित कार्य" data-en="100% voluntary & transparent service">100% स्वेच्छा और पारदर्शिता आधारित कार्य</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+                <span data-hi="अपनी सुविधानुसार सप्ताहांत (Weekend) या रिमोट समय दें" data-en="Flexible hours on weekends or remote">अपनी सुविधानुसार सप्ताहांत (Weekend) या रिमोट समय दें</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+                <span data-hi="आधिकारिक Volunteering Certificate व ID Card" data-en="Official Volunteering Certificate & ID Card">आधिकारिक Volunteering Certificate व ID Card</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+                <span data-hi="सराहनीय समाज सेवा में प्रत्यक्ष भागीदार बनने का अवसर" data-en="Direct opportunity to serve the community">सराहनीय समाज सेवा में प्रत्यक्ष भागीदार बनने का अवसर</span>
+              </li>
+            </ul>
+
+            <div class="p-3 bg-white bg-opacity-10 rounded-3 border border-light border-opacity-25">
+              <small class="d-block text-warning fw-bold mb-1" data-hi="डायरेक्ट हेल्पडेस्क संपर्क:" data-en="Direct Helpdesk Contact:">डायरेक्ट हेल्पडेस्क संपर्क:</small>
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-telephone-fill"></i>
+                <a href="tel:+918953078333" class="text-white fw-bold text-decoration-none">+91 89530 78333</a>
+              </div>
+              <div class="d-flex align-items-center gap-2 mt-1">
+                <i class="bi bi-envelope-fill"></i>
+                <a href="mailto:sarvhitsevatrust@gmail.com" class="text-white text-decoration-none small">sarvhitsevatrust@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side Registration Form -->
+        <div class="col-lg-7 fade-up stagger-2">
+          <div class="card p-4 p-md-5 rounded-4 shadow-lg border-0 bg-body-tertiary">
+
+            <div id="volunteer-success-alert" class="alert alert-success d-none mb-4 rounded-3 p-3 shadow-sm border-0" role="alert">
+              <div class="d-flex align-items-center gap-3">
+                <i class="bi bi-check-circle-fill fs-2 text-success"></i>
+                <div>
+                  <h6 class="fw-bold mb-1" data-hi="पंजीकरण सफल रहा!" data-en="Registration Successful!">पंजीकरण सफल रहा!</h6>
+                  <p class="mb-0 small" data-hi="धन्यवाद! आपका स्वयंसेवक आवेदन प्राप्त हुआ है। हमारी टीम जल्द ही आपसे व्हाट्सएप या फोन पर संपर्क करेगी।" data-en="Thank you! Your volunteer application has been received. Our coordinator will connect with you soon.">
+                    धन्यवाद! आपका स्वयंसेवक आवेदन प्राप्त हुआ है। हमारी टीम जल्द ही आपसे व्हाट्सएप या फोन पर संपर्क करेगी।
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <form id="volunteer-form">
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-bold" data-hi="पूरा नाम *" data-en="Full Name *">पूरा नाम *</label>
+                  <input type="text" class="form-control form-control-lg rounded-3" placeholder="अपना नाम दर्ज करें" required data-hi="अपना नाम दर्ज करें" data-en="Enter your full name"/>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-bold" data-hi="मोबाइल / व्हाट्सएप *" data-en="Mobile / WhatsApp *">मोबाइल / व्हाट्सएप *</label>
+                  <input type="tel" class="form-control form-control-lg rounded-3" placeholder="+91 89530 78333" required data-hi="+91 89530 78333" data-en="+91 89530 78333"/>
+                </div>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-bold" data-hi="ईमेल पता *" data-en="Email Address *">ईमेल पता *</label>
+                  <input type="email" class="form-control form-control-lg rounded-3" placeholder="name@example.com" required data-hi="name@example.com" data-en="name@example.com"/>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-bold" data-hi="शहर / जिला व राज्य *" data-en="City / District & State *">शहर / जिला व राज्य *</label>
+                  <input type="text" class="form-control form-control-lg rounded-3" placeholder="उदा. आजमगढ़, उत्तर प्रदेश" required data-hi="उदा. आजमगढ़, उत्तर प्रदेश" data-en="e.g. Azamgarh, UP"/>
+                </div>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-bold" data-hi="सेवा का पसंदीदा क्षेत्र *" data-en="Preferred Service Area *">सेवा का पसंदीदा क्षेत्र *</label>
+                  <select class="form-select form-select-lg rounded-3" required>
+                    <option value="" selected data-hi="-- क्षेत्र चुनें --" data-en="-- Select Area --">-- क्षेत्र चुनें --</option>
+                    <option data-hi="शिक्षा एवं शिक्षण (Education & Teaching)" data-en="Education & Teaching">शिक्षा एवं शिक्षण (Education & Teaching)</option>
+                    <option data-hi="स्वास्थ्य व रक्तदान शिविर (Health Camps)" data-en="Health Camps">स्वास्थ्य व रक्तदान शिविर (Health Camps)</option>
+                    <option data-hi="पर्यावरण एवं वृक्षारोपण (Environment & Trees)" data-en="Environment & Tree Plantation">पर्यावरण एवं वृक्षारोपण (Environment & Trees)</option>
+                    <option data-hi="महिला सशक्तिकरण (Women Empowerment)" data-en="Women Empowerment">महिला सशक्तिकरण (Women Empowerment)</option>
+                    <option data-hi="शीतकालीन व सामाजिक राहत (Social Relief)" data-en="Social Relief & Blanket Drive">शीतकालीन व सामाजिक राहत (Social Relief)</option>
+                    <option data-hi="डिजिटल व सोशल मीडिया (Digital & Media)" data-en="Digital & Remote Volunteering">डिजिटल व सोशल मीडिया (Digital & Media)</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-bold" data-hi="उपलब्धता / समय *" data-en="Time Availability *">उपलब्धता / समय *</label>
+                  <select class="form-select form-select-lg rounded-3" required>
+                    <option data-hi="सप्ताहांत (Weekends - 2 to 4 Hours)" data-en="Weekends (2 to 4 Hours)">सप्ताहांत (Weekends - 2 to 4 Hours)</option>
+                    <option data-hi="सप्ताह में 2-4 घंटे (2-4 Hours Weekly)" data-en="2-4 Hours Weekly">सप्ताह में 2-4 घंटे (2-4 Hours Weekly)</option>
+                    <option data-hi="इवेंट आधारित (Event / Campaign Based)" data-en="Event / Campaign Based">इवेंट आधारित (Event / Campaign Based)</option>
+                    <option data-hi="ऑनलाइन / रिमोट योगदान (Remote)" data-en="Online / Remote Contribution">ऑनलाइन / रिमोट योगदान (Remote)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label fw-bold" data-hi="संदेश / आप क्यों जुड़ना चाहते हैं? (वैकल्पिक)" data-en="Motivation / Why do you want to join? (Optional)">संदेश / आप क्यों जुड़ना चाहते हैं? (वैकल्पिक)</label>
+                <textarea class="form-control rounded-3" rows="3" placeholder="अपने अनुभव या प्रेरणा के बारे में संक्षेप में लिखें..." data-hi="अपने अनुभव या प्रेरणा के बारे में संक्षेप में लिखें..." data-en="Briefly describe your experience or motivation..."></textarea>
+              </div>
+
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="termsCheck" required/>
+                <label class="form-check-label small text-body-secondary" for="termsCheck" data-hi="मैं सर्वहित सेवा ट्रस्ट के सामाजिक उद्देश्यों के साथ स्वेच्छा से जुड़ने की पुष्टि करता/करती हूँ।" data-en="I confirm my willing participation in the social initiatives of Sarvahit Seva Trust.">
+                  मैं सर्वहित सेवा ट्रस्ट के सामाजिक उद्देश्यों के साथ स्वेच्छा से जुड़ने की पुष्टि करता/करती हूँ।
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-trust-primary btn-lg w-100 py-3 fw-bold">
+                <i class="bi bi-heart-fill me-2"></i>
+                <span data-hi="स्वयंसेवक के रूप में पंजीकरण करें" data-en="Register as a Volunteer">स्वयंसेवक के रूप में पंजीकरण करें</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-STEP PROCESS JOURNEY -->
+  <section class="py-5 bg-body-tertiary border-top">
+    <div class="container py-4">
+      <div class="text-center max-w-2xl mx-auto mb-5 fade-up">
+        <span class="text-secondary fw-bold text-uppercase tracking-wider small" data-hi="सरल प्रक्रिया" data-en="SIMPLE PROCESS">सरल प्रक्रिया</span>
+        <h2 class="display-5 fw-bold mt-2" data-hi="जुड़ने की 4-चरण प्रक्रिया" data-en="4-Step Joining Process">जुड़ने की 4-चरण प्रक्रिया</h2>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-md-3 fade-up stagger-1">
+          <div class="p-4 rounded-4 bg-body border h-100 position-relative">
+            <div class="w-12 h-12 rounded-circle bg-success text-white d-inline-flex align-items-center justify-content-center fw-bold fs-4 mb-3" style="width: 48px; height: 48px;">1</div>
+            <h6 class="fw-bold mb-2" data-hi="फॉर्म भरें" data-en="Submit Form">फॉर्म भरें</h6>
+            <p class="text-body-secondary small mb-0" data-hi="ऑनलाइन स्वयंसेवक फॉर्म में अपनी जानकारी और रुचि दर्ज करें।" data-en="Fill out your details and areas of interest in the online form.">ऑनलाइन स्वयंसेवक फॉर्म में अपनी जानकारी और रुचि दर्ज करें।</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 fade-up stagger-2">
+          <div class="p-4 rounded-4 bg-body border h-100 position-relative">
+            <div class="w-12 h-12 rounded-circle bg-warning text-dark d-inline-flex align-items-center justify-content-center fw-bold fs-4 mb-3" style="width: 48px; height: 48px;">2</div>
+            <h6 class="fw-bold mb-2" data-hi="टीम संवाद" data-en="Team Call">टीम संवाद</h6>
+            <p class="text-body-secondary small mb-0" data-hi="हमारे समन्वयक आपसे फ़ोन या व्हाट्सएप पर संवाद करेंगे।" data-en="Our coordinator contacts you via call or WhatsApp.">हमारे समन्वयक आपसे फ़ोन या व्हाट्सएप पर संवाद करेंगे।</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 fade-up stagger-3">
+          <div class="p-4 rounded-4 bg-body border h-100 position-relative">
+            <div class="w-12 h-12 rounded-circle bg-info text-white d-inline-flex align-items-center justify-content-center fw-bold fs-4 mb-3" style="width: 48px; height: 48px;">3</div>
+            <h6 class="fw-bold mb-2" data-hi="ओरिएंटेशन व रोल" data-en="Orientation & Role">ओरिएंटेशन व रोल</h6>
+            <p class="text-body-secondary small mb-0" data-hi="ट्रस्ट की गतिविधियों व आगामी अभियानों की जानकारी प्रदान की जाएगी।" data-en="Briefing about campaigns and assignment of volunteer role.">ट्रस्ट की गतिविधियों व आगामी अभियानों की जानकारी प्रदान की जाएगी।</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 fade-up stagger-4">
+          <div class="p-4 rounded-4 bg-body border h-100 position-relative">
+            <div class="w-12 h-12 rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center fw-bold fs-4 mb-3" style="width: 48px; height: 48px;">4</div>
+            <h6 class="fw-bold mb-2" data-hi="सेवा व सम्मान" data-en="Action & Recognition">सेवा व सम्मान</h6>
+            <p class="text-body-secondary small mb-0" data-hi="धरातल पर बदलाव लाएं और आधिकारिक सर्टिफिकेट प्राप्त करें।" data-en="Create ground impact and earn your official certificate.">धरातल पर बदलाव लाएं और आधिकारिक सर्टिफिकेट प्राप्त करें।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREQUENTLY ASKED QUESTIONS (FAQ) -->
+  <section class="py-5 bg-body">
+    <div class="container py-4 max-w-3xl mx-auto">
+      <div class="text-center mb-5 fade-up">
+        <span class="text-secondary fw-bold text-uppercase tracking-wider small" data-hi="सामान्य प्रश्न" data-en="FAQ">सामान्य प्रश्न</span>
+        <h2 class="display-5 fw-bold mt-2" data-hi="अक्सर पूछे जाने वाले प्रश्न" data-en="Frequently Asked Questions">अक्सर पूछे जाने वाले प्रश्न</h2>
+      </div>
+
+      <div class="accordion accordion-flush rounded-4 overflow-hidden border shadow-sm fade-up" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              <span data-hi="क्या स्वयंसेवक बनने के लिए कोई शुल्क देना होता है?" data-en="Is there any fee to join as a volunteer?">क्या स्वयंसेवक बनने के लिए कोई शुल्क देना होता है?</span>
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-body-secondary" data-hi="जी नहीं! सर्वहित सेवा ट्रस्ट में स्वयंसेवक के रूप में पंजीकरण पूरी तरह से निःशुल्क (100% Free) और स्वेच्छा पर आधारित है।" data-en="No! Volunteer registration with Sarvahit Seva Trust is completely free (100% Free) and voluntary.">
+              जी नहीं! सर्वहित सेवा ट्रस्ट में स्वयंसेवक के रूप में पंजीकरण पूरी तरह से निःशुल्क (100% Free) और स्वेच्छा पर आधारित है।
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              <span data-hi="क्या मुझे स्वयंसेवा का प्रमाणपत्र (Certificate) मिलेगा?" data-en="Will I get a Certificate of Volunteering?">क्या मुझे स्वयंसेवा का प्रमाणपत्र (Certificate) मिलेगा?</span>
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-body-secondary" data-hi="हाँ, संस्था के अभियानों में सक्रिय रूप से योगदान देने वाले सभी स्वयंसेवकों को सर्वहित सेवा ट्रस्ट द्वारा आधिकारिक 'Certificate of Appreciation' प्रदान किया जाता है।" data-en="Yes, all active volunteers receive an official 'Certificate of Appreciation' from Sarvahit Seva Trust upon campaign completion.">
+              हाँ, संस्था के अभियानों में सक्रिय रूप से योगदान देने वाले सभी स्वयंसेवकों को सर्वहित सेवा ट्रस्ट द्वारा आधिकारिक 'Certificate of Appreciation' प्रदान किया जाता है।
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              <span data-hi="क्या मैं घर बैठे (Online / Remote) स्वयंसेवा कर सकता हूँ?" data-en="Can I volunteer remotely / online?">क्या मैं घर बैठे (Online / Remote) स्वयंसेवा कर सकता हूँ?</span>
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-body-secondary" data-hi="बिल्कुल! यदि आप ग्राउंड पर उपस्थित नहीं हो सकते, तो आप सोशल मीडिया जागरूकता, कंटेंट राइटिंग, ग्राफिक्स एवं ऑनलाइन अभियानों के माध्यम से रिमोटली योगदान दे सकते हैं।" data-en="Absolutely! If you cannot be on-ground, you can contribute remotely via social media awareness, content writing, design, and digital drives.">
+              बिल्कुल! यदि आप ग्राउंड पर उपस्थित नहीं हो सकते, तो आप सोशल मीडिया जागरूकता, कंटेंट राइटिंग, ग्राफिक्स एवं ऑनलाइन अभियानों के माध्यम से रिमोटली योगदान दे सकते हैं।
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+              <span data-hi="न्यूनतम कितना समय देना आवश्यक है?" data-en="How much minimum time commitment is required?">न्यूनतम कितना समय देना आवश्यक है?</span>
+            </button>
+          </h2>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-body-secondary" data-hi="समय का चयन पूरी तरह आपकी उपलब्धता पर निर्भर करता है। आप सप्ताहांत में केवल 2-4 घंटे या विशिष्ट प्रोजेक्ट कार्यक्रमों के समय अपना योगदान दे सकते हैं।" data-en="Time commitment is flexible according to your availability. You can volunteer just 2-4 hours on weekends or during specific project drives.">
+              समय का चयन पूरी तरह आपकी उपलब्धता पर निर्भर करता है। आप सप्ताहांत में केवल 2-4 घंटे या विशिष्ट प्रोजेक्ट कार्यक्रमों के समय अपना योगदान दे सकते हैं।
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT STRIP -->
+  <section class="py-5 bg-body border-top">
+    <div class="container">
+      <div class="row g-4 text-center text-md-start align-items-center">
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-3">
+            <div class="p-3 rounded-circle bg-success-subtle text-success"><i class="bi bi-telephone-fill fs-3"></i></div>
+            <div>
+              <small class="text-body-secondary d-block" data-hi="फ़ोन संपर्क" data-en="Call Us">फ़ोन संपर्क</small>
+              <a href="tel:+918953078333" class="fw-bold text-decoration-none text-body">+91 89530 78333</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-3">
+            <div class="p-3 rounded-circle bg-warning-subtle text-warning"><i class="bi bi-envelope-fill fs-3"></i></div>
+            <div>
+              <small class="text-body-secondary d-block" data-hi="ईमेल पता" data-en="Email Us">ईमेल पता</small>
+              <a href="mailto:sarvhitsevatrust@gmail.com" class="fw-bold text-decoration-none text-body">sarvhitsevatrust@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-3">
+            <div class="p-3 rounded-circle bg-info-subtle text-info"><i class="bi bi-geo-alt-fill fs-3"></i></div>
+            <div>
+              <small class="text-body-secondary d-block" data-hi="कार्यालय पता" data-en="Visit Us">कार्यालय पता</small>
+              <span class="fw-bold small text-body" data-hi="ग्राम- लहुवा खुर्द, पोस्ट- पहलना, तहसील- लालगंज, जिला- आजमगढ़, उत्तर प्रदेश - 276202" data-en="Village Lahua Khurd, Post Palhna, Tehsil Lalganj, District Azamgarh, Uttar Pradesh - 276202">ग्राम- लहुवा खुर्द, पोस्ट- पहलना, आजमगढ़ - 276202</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white pt-5 pb-4 border-top border-success">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <img src="assets/images/logo.png" alt="Logo" style="height: 36px; object-fit: contain;"/>
+            <h4 class="fw-bold text-success mb-0" data-hi="सर्वहित सेवा ट्रस्ट" data-en="SARVAHIT SEVA TRUST">सर्वहित सेवा ट्रस्ट</h4>
+          </div>
+          <p class="text-warning font-motto small mb-3" data-hi="सेवा | सहयोग | मानवता | जनकल्याण" data-en="Service | Cooperation | Humanity | Public Welfare">सेवा | सहयोग | मानवता | जनकल्याण</p>
+          <p class="text-white-50 small mb-3" data-hi="मानव सेवा, शिक्षा, स्वास्थ्य, पर्यावरण संरक्षण एवं जनकल्याण के प्रति समर्पित।" data-en="Dedicated to human service, education, healthcare, environment protection and public welfare.">
+            मानव सेवा, शिक्षा, स्वास्थ्य, पर्यावरण संरक्षण एवं जनकल्याण के प्रति समर्पित।
+          </p>
+          <small class="badge bg-success-subtle text-success" data-hi="पंजीकरण संख्या: UP/2026/1144009" data-en="Registration No: UP/2026/1144009">पंजीकरण संख्या: UP/2026/1144009</small>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold text-warning mb-3" data-hi="त्वरित लिंक" data-en="Quick Links">त्वरित लिंक</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small text-white-50">
+            <li><a href="index.html" class="text-white-50 text-decoration-none hover-text-white" data-hi="मुख्य पृष्ठ" data-en="Home">मुख्य पृष्ठ</a></li>
+            <li><a href="about.html" class="text-white-50 text-decoration-none hover-text-white" data-hi="हमारे बारे में" data-en="About Us">हमारे बारे में</a></li>
+            <li><a href="projects.html" class="text-white-50 text-decoration-none hover-text-white" data-hi="कार्यक्रम" data-en="Programs">कार्यक्रम</a></li>
+            <li><a href="gallery.html" class="text-white-50 text-decoration-none hover-text-white" data-hi="गैलरी" data-en="Gallery">गैलरी</a></li>
+            <li><a href="team.html" class="text-white-50 text-decoration-none hover-text-white" data-hi="टीम" data-en="Team">टीम</a></li>
+            <li><a href="volunteer.html" class="text-white-50 text-decoration-none hover-text-white" data-hi="हमसे जुड़ें" data-en="Volunteer">हमसे जुड़ें</a></li>
+            <li><a href="contact.html" class="text-white-50 text-decoration-none hover-text-white" data-hi="संपर्क" data-en="Contact">संपर्क</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h6 class="fw-bold text-warning mb-3" data-hi="कार्यक्रम" data-en="Programs">कार्यक्रम</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small text-white-50">
+            <li data-hi="शिक्षा | Education" data-en="Education">शिक्षा</li>
+            <li data-hi="स्वास्थ्य | Healthcare" data-en="Healthcare">स्वास्थ्य</li>
+            <li data-hi="पर्यावरण | Environment" data-en="Environment">पर्यावरण</li>
+            <li data-hi="सामाजिक सहायता | Social Support" data-en="Social Support">सामाजिक सहायता</li>
+            <li data-hi="महिला सशक्तिकरण | Women Empowerment" data-en="Women Empowerment">महिला सशक्तिकरण</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h6 class="fw-bold text-warning mb-3" data-hi="संपर्क" data-en="Contact Us">संपर्क</h6>
+          <p class="text-white-50 small mb-2"><i class="bi bi-telephone-fill me-2 text-success"></i>+91 89530 78333</p>
+          <p class="text-white-50 small mb-2"><i class="bi bi-envelope-fill me-2 text-success"></i>sarvhitsevatrust@gmail.com</p>
+          <p class="text-white-50 small mb-3"><i class="bi bi-geo-alt-fill me-2 text-success"></i>आजमगढ़, उत्तर प्रदेश - 276202</p>
+          <div class="d-flex gap-2">
+            <a href="https://wa.me/918953078333" target="_blank" class="btn btn-sm btn-outline-success rounded-circle"><i class="bi bi-whatsapp"></i></a>
+            <a href="mailto:sarvhitsevatrust@gmail.com" class="btn btn-sm btn-outline-warning rounded-circle"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary"/>
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small text-white-50">
+        <div>
+          © 2026 Sarvahit Seva Trust | सर्वाधिकार सुरक्षित | All Rights Reserved
+        </div>
+        <div>
+          Registration No. UP/2026/1144009
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <a href="https://wa.me/918953078333?text=नमस्ते%2C%20मैं%20सर्वहित%20सेवा%20ट्रस्ट%20के%20बारे%20में%20अधिक%20जानकारी%20प्राप्त%20करना%20चाहता%2Fचाहती%20हूँ।" target="_blank" class="btn-whatsapp-float" title="WhatsApp Us">
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/918953078333?text=नमस्ते%2C%20मैं%20सर्वहित%20सेवा%20ट्रस्ट%20में%20स्वयंसेवक%20के%20रूप%20में%20जुड़ना%20चाहता%2Fचाहती%20हूँ।" target="_blank" class="btn-whatsapp-float" title="WhatsApp पर संपर्क करें | Contact Us on WhatsApp">
     <i class="bi bi-whatsapp"></i>
   </a>
-  <button id="back-to-top" class="btn-back-to-top"><i class="bi bi-arrow-up"></i></button>
 
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="btn-back-to-top" title="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
   <script src="assets/js/app.js"></script>
 </body>
 </html>
