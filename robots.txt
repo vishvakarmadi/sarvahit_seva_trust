@@ -3,13 +3,17 @@
 User-agent: *
 Allow: /
 
-# AI & Search Crawlers
+# Search Engine Crawlers
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
+User-agent: YandexBot
+Allow: /
+
+# AI & Generative Engine Optimization (GEO) Crawlers
 User-agent: GPTBot
 Allow: /
 
@@ -19,11 +23,33 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 User-agent: Applebot
 Allow: /
 
-# XML Sitemap
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# XML Sitemap & LLMs Context
 Sitemap: https://sarvahitsevatrust.com/sitemap.xml
+# LLMs Text: https://sarvahitsevatrust.com/llms.txt
