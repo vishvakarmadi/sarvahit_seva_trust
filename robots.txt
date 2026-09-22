@@ -1,0 +1,29 @@
+# robots.txt for https://sarvahitsevatrust.com
+
+User-agent: *
+Allow: /
+
+# AI & Search Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# XML Sitemap
+Sitemap: https://sarvahitsevatrust.com/sitemap.xml
